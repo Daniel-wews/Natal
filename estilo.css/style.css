@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    list-style: none;
+}
+
+.limita-secao{
+    width: 88%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #f7c7b5;
+    padding:15px 0;
+    font-weight: 500;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:0 10px;
+}
+
+.logo{
+    display: flex;
+    gap:9px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 35px;
+    height:38px;
+}
+
+header nav ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+header nav a{
+    text-decoration: none;
+    color:#161212;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+header nav li{
+    border-radius: 10px;
+    padding: 10px 0;
+}
+
+header nav a:hover{
+    color: white;
+    box-shadow: 3px 3px 3px  #DA2535;
+}
+
+header nav li:hover{
+    background-color: #d88a85;
+    transition: .5s;
+}
+
+.mobile-menu, .mobile-menu-icon{
+    display: none;
+}
+
+/* começo da section */
+main section{
+    background-color: #f7c7b5;
+    padding: 50px 0 100px 0 ;
+}
+
+.box-01, .box-03{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.box-03{
+    justify-content: space-around;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.textos h1{
+    font-size: 42px;
+    white-space:pre-line;
+}
+
+.textos p{
+    white-space: pre-line;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background-color: #DA2535;
+    color:white;
+    border:none;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.botao:hover{
+    transform: scale(110%);
+    box-shadow: 2px 2px 2px black;
+}
+
+.box-01 figure{
+    width:600px;
+    height:360px;
+}
+
+main section div figure img, .box-03 figure img{
+    width:100%;
+    height:100%
+}
+
+.botao img{
+    background-color: transparent;
+    border: none;
+}
+
+.box-02{
+    background-color: #F0F8FD;
+}
+
+.acessorios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acessorios h2{
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+
+.acessorios p{
+    color:#404040;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: 50px;
+    padding:5px;
+}
+
+.presentes{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+.presentes figure{
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin:10px 15px;
+}
+
+.presentes figure img{
+    width: 200px;
+}
+
+.presentes figure figcaption{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.presentes figure span{
+    font-weight: 500;
+    color:#8D8D8D;
+    white-space: pre-line;
+}
+/* começo section 03  */
+
+.box-03 figure{
+    width:400px;
+    height:400px;
+}
+
+.textos h2{
+    font-size: 48px;
+    white-space: pre-line;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:20vh;
+}
+
+footer nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:35vw;
+}
+
+footer figure{
+    display: flex;
+}
+
+footer nav figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-footer{
+    position: absolute;
+}
+
+@media screen and (max-width:1200px){
+    .box-01{
+        flex-direction: column;
+    }
+    main section div button{
+        width: 100%;
+    }
+    main section div{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:768px){
+    .nav-item{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+    }
+    
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border:none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    
+    .nav-item a:hover{
+        background-color: #d88a85;
+        transition: .5s;
+        box-shadow: 3px 3px 3px  #DA2535;
+    }
+    
+    .nav-item:hover{
+        background-color: #f7c7b5;
+    }
+    
+    .box-01 figure{
+        display: none;
+    }
+    .open{
+        display: block;
+    }
+    .botao{
+        width:100%;
+    }
+    .comemore figure{
+        display: none;
+    }
+
+    .box-03{
+        justify-content: center;
+    }
+
+    .textos h2{
+        font-size: 24px;
+    }
+
+    .textos p{
+        font-size: 14px;
+        white-space:normal;
+    }
+
+    footer .logo{
+        display: none;
+    }
+
+    footer nav{
+        width: 100vw;
+        justify-content: center;
+    }
+    
+    footer nav figure{
+        margin:0 3%;
+    }
+}
